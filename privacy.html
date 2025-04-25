@@ -18,8 +18,10 @@
                     <img src="images/bx-search (1).svg" alt="Search" class="button-icon">
                 </button>
                 <div class="cart-icon-container">
-                    <img src="images/bx-cart.svg" alt="Cart" class="cart-icon">
-                </div>
+                  <a href="./cart.html"> <!-- Link to your cart page -->
+                      <img src="images/bx-cart.svg" alt="Cart" class="cart-icon">
+                  </a>
+              </div>
                 <div class="login-icon-container">
                     <img src="images/bx-log-in.svg" alt="Login" class="login-icon">
                 </div>
@@ -35,9 +37,9 @@
               
                 <!-- Nav links -->
                 <ul>
-                  <li><a href="./indax.html">Home</a></li>
-                  <li><a href="./about us.html">About Us</a></li>
-                  <li><a href="./upc games.html">Upcoming Games</a></li>
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="./aboutus.html">About Us</a></li>
+                  <li><a href="./upc-games.html">Upcoming Games</a></li>
               
                   <!-- Dropdown Menu -->
                   <li class="dropdown">
@@ -50,70 +52,180 @@
               
                   <li><a href="./games.html">Games</a></li>
                   <li><a href="./q&f.html">Q&F</a></li>
-                  <li><a href="./privacy.html">Privacy</a></li>
+                  <li><a href="./privacy.html">shop now!</a></li>
                 </ul>
             </nav> 
         </div>
     </header>
-    <section class="privacy-policy">
-        <div class="container">
-            <h1>Privacy Policy</h1>
-            <p><strong>Effective Date:</strong> January 11, 2025</p>
-
-            <p>At <strong>Cyber Razer</strong>, we value and respect the privacy of our customers. This Privacy Policy outlines the types of personal information we collect, how we use and protect that information, and your rights regarding your personal data. By visiting our website and using our services, you agree to the terms set forth in this policy.</p>
-
-            <h2>1. Information We Collect</h2>
-            <p>We collect various types of information to provide and improve our services, including:</p>
-            <ul>
-                <li><strong>Personal Information:</strong> When you create an account, make a purchase, or contact us, we may collect personal details such as your name, email address, shipping and billing addresses, phone number, payment details, and other necessary information for fulfilling orders.</li>
-                <li><strong>Usage Data:</strong> We automatically collect information about how you interact with our website, including IP address, browser type, pages visited, device information, and other browsing data.</li>
-            </ul>
-
-            <h2>2. How We Use Your Information</h2>
-            <p>We use your information for various purposes, including:</p>
-            <ul>
-                <li>Processing and fulfilling orders, including payment and shipping</li>
-                <li>Communicating with you about your orders, updates, and promotions</li>
-                <li>Improving our website, services, and product offerings</li>
-                <li>Providing customer support and responding to inquiries</li>
-                <li>Enhancing your shopping experience through personalized recommendations</li>
-                <li>Ensuring the security of our website and preventing fraud</li>
-            </ul>
-
-            <h2>3. How We Protect Your Information</h2>
-            <p>Cyber Razer takes the security of your personal data seriously. We implement a variety of security measures, including encryption and secure servers, to safeguard your information. However, please be aware that no method of internet transmission or electronic storage is entirely secure, and we cannot guarantee absolute security.</p>
-
-            <h2>4. Sharing Your Information</h2>
-            <p>We do not sell, rent, or trade your personal information to third parties. However, we may share your data in the following circumstances:</p>
-            <ul>
-                <li>With trusted third-party service providers who assist us in operating our website and conducting business (e.g., payment processors, shipping companies, etc.)</li>
-                <li>As required by law or to protect our legal rights</li>
-            </ul>
-
-            <h2>5. Your Rights and Choices</h2>
-            <p>You have certain rights regarding your personal data, including:</p>
-            <ul>
-                <li><strong>Access:</strong> You can request access to the personal information we hold about you.</li>
-                <li><strong>Correction:</strong> You can update or correct your personal information by logging into your account or contacting us.</li>
-                <li><strong>Deletion:</strong> You may request that we delete your personal information, subject to any legal obligations.</li>
-                <li><strong>Opt-Out:</strong> You can unsubscribe from marketing emails at any time by using the unsubscribe link in the emails.</li>
-            </ul>
-
-            <h2>6. Cookies and Tracking Technologies</h2>
-            <p>We use cookies and similar tracking technologies to enhance your experience on our website. Cookies help us remember your preferences, improve website functionality, and analyze usage patterns. You can control cookies through your browser settings.</p>
-
-            <h2>7. Changes to This Privacy Policy</h2>
-            <p>Cyber Razer reserves the right to update this Privacy Policy from time to time. When we make changes, we will post the updated policy on this page and update the effective date. We encourage you to review this policy periodically to stay informed about how we protect your information.</p>
-
-            <h2>8. Contact Us</h2>
-            <p>If you have any questions about this Privacy Policy or how we handle your personal data, please contact us at:</p>
-            <p><strong>Cyber Razer</strong><br>
-            Email: <a href="mailto:support@cyberrazer.com">support@cyberrazer.com</a><br>
-            Phone: 1-800-123-4567<br>
-            Address: 123 Gaming Street, Cityville, State, 12345</p>
+    <form id="partsForm">
+        <div class="category">
+          <h2>Processors</h2>
+          <div class="item-grid">
+            <div class="item">
+              <img src="images/i5.jpg" alt="Intel i5">
+              <input type="number" min="0" value="0" data-price="250" name="Intel i5"> Intel i5 ($250)
+            </div>
+            <div class="item">
+              <img src="images/i7.jpg" alt="Intel i7">
+              <input type="number" min="0" value="0" data-price="300" name="Intel i7"> Intel i7 ($300)
+            </div>
+            <div class="item">
+              <img src="images/i9.jfif" alt="Intel i9">
+              <input type="number" min="0" value="0" data-price="350" name="Intel i9"> Intel i9 ($350)
+            </div>
+            <div class="item">
+              <img src="images/ryzen5.jpg" alt="Ryzen 5">
+              <input type="number" min="0" value="0" data-price="200" name="Ryzen 5"> Ryzen 5 ($200)
+            </div>
+            <div class="item">
+              <img src="images/ryzen7.jpg" alt="Ryzen 7">
+              <input type="number" min="0" value="0" data-price="280" name="Ryzen 7"> Ryzen 7 ($280)
+            </div>
+            <div class="item">
+              <img src="images/ryzen9.jpg" alt="Ryzen 9">
+              <input type="number" min="0" value="0" data-price="320" name="Ryzen 9"> Ryzen 9 ($320)
+            </div>
+          </div>
         </div>
-    </section>
-    <footer>
+    
+        <div class="category">
+          <h2>Graphic Cards</h2>
+          <div class="item-grid">
+            <div class="item">
+              <img src="images/RTX1.jpg" alt="RTX 3060">
+              <input type="number" min="0" value="0" data-price="500" name="RTX 3060"> RTX 3060 ($500)
+            </div>
+            <div class="item">
+              <img src="images/RTX2.jpg" alt="RTX 3070">
+              <input type="number" min="0" value="0" data-price="600" name="RTX 3070"> RTX 3070 ($600)
+            </div>
+            <div class="item">
+              <img src="images/RTX3.jpg" alt="RTX 3080">
+              <input type="number" min="0" value="0" data-price="700" name="RTX 3080"> RTX 3080 ($700)
+            </div>
+            <div class="item">
+              <img src="images/GTX.jpg" alt="GTX 1660">
+              <input type="number" min="0" value="0" data-price="400" name="GTX 1660"> GTX 1660 ($400)
+            </div>
+            <div class="item">
+              <img src="images/RX T.jpg" alt="RX 6700">
+              <input type="number" min="0" value="0" data-price="450" name="RX 6700"> RX 6700 ($450)
+            </div>
+            <div class="item">
+              <img src="images/RX T2.png" alt="RX 6800">
+              <input type="number" min="0" value="0" data-price="550" name="RX 6800"> RX 6800 ($550)
+            </div>
+          </div>
+        </div>
+    
+        <div class="category">
+          <h2>Motherboards</h2>
+          <div class="item-grid">
+            <div class="item">
+              <img src="images/MSI.jpg" alt="MSI B450">
+              <input type="number" min="0" value="0" data-price="120" name="MSI B450"> MSI B450 ($120)
+            </div>
+            <div class="item">
+              <img src="images/ASUS.jpg" alt="ASUS Z590">
+              <input type="number" min="0" value="0" data-price="150" name="ASUS Z590"> ASUS Z590 ($150)
+            </div>
+            <div class="item">
+              <img src="images/X570.jpg" alt="Gigabyte X570">
+              <input type="number" min="0" value="0" data-price="180" name="Gigabyte X570"> Gigabyte X570 ($180)
+            </div>
+            <div class="item">
+              <img src="images/B550.jfif" alt="ASRock B550">
+              <input type="number" min="0" value="0" data-price="130" name="ASRock B550"> ASRock B550 ($130)
+            </div>
+            <div class="item">
+              <img src="images/intel h4.jpg" alt="Intel H410">
+              <input type="number" min="0" value="0" data-price="140" name="Intel H410"> Intel H410 ($140)
+            </div>
+            <div class="item">
+              <img src="images/z690.png" alt="Z690 AORUS">
+              <input type="number" min="0" value="0" data-price="160" name="Z690 AORUS"> Z690 AORUS ($160)
+            </div>
+          </div>
+        </div>
+    
+        <div class="category">
+          <h2>Memory (RAM)</h2>
+          <div class="item-grid">
+            <div class="item">
+              <img src="images/ddr 8gb.jpg" alt="8GB DDR4">
+              <input type="number" min="0" value="0" data-price ="70" name="8GB DDR4"> 8GB DDR4 ($70)
+            </div>
+            <div class="item">
+              <img src="images/ddr 16gb.jpg" alt="16GB DDR4">
+              <input type="number" min="0" value="0" data-price="120" name="16GB DDR4"> 16GB DDR4 ($120)
+            </div>
+            <div class="item">
+              <img src="images/ddr 32gb.jpg" alt="32GB DDR4">
+              <input type="number" min="0" value="0" data-price="200" name="32GB DDR4"> 32GB DDR4 ($200)
+            </div>
+            <div class="item">
+              <img src="images/ddr 64gb.jpg" alt="64GB DDR4">
+              <input type="number" min="0" value="0" data-price="250" name="64GB DDR4"> 64GB DDR4 ($250)
+            </div>
+          </div>
+        </div>
+    
+        <div class="category">
+          <h2>Storage Devices</h2>
+          <div class="item-grid">
+            <div class="item">
+              <img src="images/256 ssd.jpg" alt="256GB SSD">
+              <input type="number" min="0" value="0" data-price="60" name="256GB SSD"> 256GB SSD ($60)
+            </div>
+            <div class="item">
+              <img src="images/ssd 512.jpg" alt="512GB SSD">
+              <input type="number" min="0" value="0" data-price="100" name="512GB SSD"> 512GB SSD ($100)
+            </div>
+            <div class="item">
+              <img src="images/1tb ssd.jpg" alt="1TB SSD">
+              <input type="number" min="0" value="0" data-price="150" name="1TB SSD"> 1TB SSD ($150)
+            </div>
+            <div class="item">
+              <img src="images/1tbhdd.jpg" alt="1TB HDD">
+              <input type="number" min="0" value="0" data-price="80" name="1TB HDD"> 1TB HDD ($80)
+            </div>
+            <div class="item">
+              <img src="images/2tbhdd.jpg" alt="2TB HDD">
+              <input type="number" min="0" value="0" data-price="110" name="2TB HDD"> 2TB HDD ($110)
+            </div>
+            <div class="item">
+              <img src="images/2tb ssd.png" alt="2TB SSD">
+              <input type="number" min="0" value="0" data-price="180" name="2TB SSD"> 2TB SSD ($180)
+            </div>
+          </div>
+        </div>
+    
+        <button type="button" class="btn" onclick="goToCart()">Add to Cart</button>
+        <button type="button" class="btn" onclick="saveFavourite()">Add to Favourites</button>
+        <button type="button" class="btn" onclick="applyFavourite()">Apply Favourites</button>
+      </form>
+    
+      <table id="cart">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Total</td>
+            <td id="total">$0</td>
+          </tr>
+        </tfoot>
+      </table>
+      <button class="btn" onclick="buyNow()">Buy Now</button>
+    
+      <script src="order.js"></script>
+      
+        <footer>
         <div class="footer-container">
             <div class="footer-column">
                 <h3>Games</h3>
@@ -140,8 +252,8 @@
             <div class="footer-column">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="./indax.html">Home</a></li>
-                    <li><a href="./about us.html">About Us</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
                     <li><a href="./games.html">Games</a></li>
                     <li><a href="./privacy.html">Privacy Policy</a></li>
                     <li><a href="./q&f.html">Q&F</a></li>

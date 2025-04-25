@@ -1,0 +1,89 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1f1f1f; /* Dark background color */
+  color: #f4f4f4; /* Light text color for contrast */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  min-height: 100vh; /* Full height of the viewport */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#order-summary {
+  width: 80%; /* Set width for the order summary */
+  margin-bottom: 20px;
+}
+
+#summary-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+#summary-table th, #summary-table td {
+  border: 1px solid #444; /* Darker border for better visibility */
+  padding: 10px;
+  text-align: left;
+}
+
+#summary-table th {
+  background-color: #007bff; /* Blue background for header */
+  color: white;
+}
+
+form {
+  width: 80%; /* Set width for the form */
+  background-color: #2a2a2a; /* Dark background for the form */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Darker shadow */
+}
+
+form h2 {
+  margin-bottom: 10px;
+}
+
+form input {
+  width: 100%; /* Full width for inputs */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #444; /* Darker border for inputs */
+  border-radius: 4px;
+  background-color: #3a3a3a; /* Darker input background */
+  color: #f4f4f4; /* Light text color for inputs */
+}
+
+form input::placeholder {
+  color: #bbb; /* Placeholder text color */
+}
+
+form .btn {
+  background-color: #00d4ff; /* Blue button */
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form .btn:hover {
+  background-color: #00d4ff; /* Darker blue on hover */
+}
+
+#confirmation {
+  text-align: center;
+  margin-top: 20px;
+  color: #f4f4f4; /* Light text color for confirmation */
+}

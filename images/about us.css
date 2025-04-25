@@ -194,6 +194,7 @@
     background-color: white;
   }
   
+  
   /* Media Query for Mobile Devices */
   @media screen and (max-width: 768px) {
     /* Hide the navbar by default on mobile */
@@ -231,122 +232,193 @@
     .dropdown:hover .dropdown-content {
       display: block;
     }
-    body{
-      max-width: fit-content;
-    }
   }
-/* FAQ Section Styling */
-#faq-section {
-    height: 100vh;
+
+/* General Styles */
+h1, h2 {
+    font-size: 44px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* Branch Section */
+.branch {
+    margin-top: 150px;
+}
+
+.branch-info {
     display: flex;
-    justify-content: center;
+    margin: 20px 0;
+}
+
+.branch-details {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
-    background: url('images/bg\ img\ 2.jpg') no-repeat center center/cover;
-    padding: 100px 50px;
+    width: 100%;
 }
 
-#faq-section h2 {
-    text-align: center;
-    font-size:3rem;
-    margin-bottom: 20px;
+.map {
+    width: 50%;
+    padding-right: 20px;
+    align-items: stretch;
 }
 
-.faq{
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
-    gap: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+.info {
+    width: 50%;
 }
 
-.faq-item {
-    background-color: #ddd;
-    padding: 25px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-
-.faq-item h3 {
-    color: #111111;
-    margin: 0 0 10px;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
-.faq-item p {
-    font-size: 1rem;
-    color: #666;
-    display: none; /* Hide the paragraph initially */
+.info img {
     margin-top: 10px;
 }
 
-/* Show the paragraph when the parent faq-item is hovered */
-.faq-item:hover p {
-    display: block;
+/* Summary Table */
+.summary-table {
+    padding: 20px;
+    background-color: #b3b3b3;
+    margin: 20px;
+    border-radius: 8px;
+    border: 3px solid #111111;
 }
 
-
-/* Ask a Question Section Styling */
-#ask-question{
-    background: url('./images/cod\ bg.jpg') no-repeat center center/cover;
-}
-#ask-question {
-    padding: 50px 20px;
-    background-color: #1f1f1f;
-    color: #fff;
+.summary-table h2 {
+    color: #111111;
 }
 
-#ask-question h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-label {
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-input, textarea {
+/* Table Headers */
+th {
     padding: 10px;
-    font-size: 1rem;
-    background-color: #ddd;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-textarea {
-    height: 150px;
-    resize: vertical;
-}
-
-button.submit-btn {
-    padding: 10px 20px;
-    font-size: 1rem;
     color: #fff;
-    background-color: #00d4ff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    background-color: #333;  /* Darker background for headers */
+    border: 2px solid #111111;
+    text-align: left;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    /* Branch Section - Stacking elements */
+    .branch-info {
+        flex-direction: column;
+    }
+
+    .map, .info {
+        max-width: 50%;
+        padding-right: 0;
+        text-align: center;
+    }
+    .iframe{
+      max-width: 10%;
+    }
+
+    .info img {
+        width: 80%;  /* Make images responsive */
+    }
+
+    /* Adjust font sizes for smaller screens */
+    h1, h2 {
+        font-size: 50px;  /* Reduce font size */
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    /* Summary Table */
+    .summary-table {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 14px;  /* Adjust table font size */
+    }
+
+    /* Table Headers */
+    th {
+        padding: 8px;
+    }
+
+    /* Table Data */
+    td {
+        padding: 8px;
+    }
+}
+
+/* Extra Small Screens (e.g. mobile portrait) */
+@media screen and (max-width: 480px) {
+    .branch {
+        margin-top: 100px;  /* Adjust margin for smaller screens */
+    }
+
+    .summary-table {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    table {
+        font-size: 12px;  /* Further reduce font size for very small screens */
+    }
+
+    th, td {
+        padding: 5px;
+    }
+}
+
+
+/* Style for table data (td) */
+td {
+    padding: 10px;
+    color: #fff;
+    border: 2px solid #111111;
+    text-align: left;
+    background-color: #1f1f1f; /* Dark background for data cells */
+}
+
+thead {
+    background-color: #333;
+    color: #111111;
+}
+
+tfoot {
+    background-color: #333;
+    text-align: center;
+}
+
+tfoot td {
+    font-style: italic;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .branch-details {
+        flex-direction: column;
+    }
+
+    .map, .info {
+        width: 30%;
+        max-width: 40%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .branch-info {
+        flex-direction: column;
+    }
 }
 footer {
     background-color: #121212;
     color: white;
     padding: 20px 20px;
+    width: 100%;
   }
   
   .footer-container {
@@ -412,3 +484,24 @@ footer {
   .footer-column ul {
     padding-left: 20px;
   }
+  @media screen and (max-width: 768px) {
+    /*header mobile version*/
+    header{
+      height: 18%;
+    }
+    .search-bar{
+      margin-top: 50px;
+      right: 29%;
+    }
+    .cart-icon-container{
+      width: auto; /* Adjust width to auto for the icon */
+      height: auto;
+      display: flex;
+      position: absolute; /* Or use 'fixed' if you want it to stay there on scroll */
+      top: 100px;
+      right:30px;
+      padding: 10px; /* Optional: Add some spacing from the edge */
+      z-index: 1000;
+    }
+    
+    } 
